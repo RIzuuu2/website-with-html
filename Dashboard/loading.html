@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="loading"></div>
+    <style>
+        body{
+            background-color: black;
+        }
+        .loading {
+          border: 5px solid #f3f3f3; /* tepi */
+          border-radius: 50%; /* buat lingkaran */
+          border-top: 5px solid #3498db; /* warna top */
+          width: 50px; /* lebar */
+          height: 50px; /* tinggi */
+          -webkit-animation: spin 2s linear infinite; /* animasi untuk webkit (Chrome, Safari, dll.) */
+          animation: spin 2s linear infinite; /* animasi untuk browser lain */
+        }
+      
+        /* animasi keputaran */
+        @-webkit-keyframes spin {
+          0% { -webkit-transform: rotate(0deg); }
+          100% { -webkit-transform: rotate(360deg); }
+        }
+      
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+        </style>
+    </body>
+</html>
